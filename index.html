@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru" class="" data-tsh-theme="dark">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Вайб-кодинг — видео-сайт на скролле</title>
+  <meta name="description" content="Занятие курса Yodiz® x Zubkov, где дизайнер собирает сайт с видео, скроллом, движением и публикацией в интернет.">
+  <meta name="theme-color" content="#030305">
+  <meta property="og:title" content="Вайб-кодинг — видео-сайт на скролле">
+  <meta property="og:description" content="Дизайнер собирает сайт с видео, скроллом, движением и публикацией в интернет.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets99/poster.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./на_скролле_files/css2" rel="stylesheet">
+  <link rel="stylesheet" href="./assets99/styles.css">
+</head>
+<body>
+  <main>
+    <section class="scroll-cinema" id="scroll-cinema" aria-label="Промо занятия Вайб-кодинг">
+      <div class="sticky-scene">
+        <!-- Видео для скролла ВПЕРЕД -->
+        <video class="scene-video" id="scroll-video-forward" muted playsinline preload="auto" poster="assets99/poster-forward.jpg" aria-label="Кинематографичный проход камеры от дальнего горного пейзажа к крупному плану преподавателя (скролл вперед)">
+          <source src="assets99/vibe-coding-scroll1-scrub-optimized.mp4" type="video/mp4">
+          <source src="assets99/vibe-coding-scroll1-optimized.mp4" type="video/mp4">
+          Ваш браузер не поддерживает фоновое видео.
+        </video>
+
+        <!-- Видео для скролла НАЗАД -->
+        <video class="scene-video" id="scroll-video-backward" muted playsinline preload="auto" poster="assets99/poster-backward.jpg" aria-label="Кинематографичный проход камеры от крупного плана преподавателя к дальнему горному пейзажу (скролл назад)">
+          <source src="assets99/vibe-coding-scroll2-scrub.mp4" type="video/mp4">
+          <source src="assets99/vibe-coding-scroll2.mp4" type="video/mp4">
+          Ваш браузер не поддерживает фоновое видео.
+        </video>
+
+        <img class="poster-fallback" src="./assets/poster.jpg" alt="Горный пейзаж на рассвете, человек стоит в центре кадра">
+
+        <div class="shade shade-dark" aria-hidden="true"></div>
+        <div class="shade shade-vignette" aria-hidden="true"></div>
+        <div class="shade shade-side-left" aria-hidden="true"></div>
+        <div class="shade shade-side-right" aria-hidden="true"></div>
+        <div class="shade shade-mobile-bottom" aria-hidden="true"></div>
+
+        <header class="scene-chrome" aria-label="Yodiz x ajkpro">
+          <a class="brand-mark brand-left" href="https://yodizlife.ru/vibe" target="_blank" rel="noopener">Yodiz®</a>
+          <span class="brand-x" aria-hidden="true">=x=</span>
+          <a class="brand-mark brand-right" href="https://ajkpro.ru" target="_blank" rel="noopener">ajkpro</a>
+        </header>
+
+        <div class="copy-stage" aria-live="off">
+          <article class="copy-panel align-left is-visible" data-start="0" data-end="0.17">
+            <h1>Белое пространство — ваше всё.</h1>
+            <p class="lead">Воздух в макете дороже воздуха в офисе, но дышать им нельзя..</p>
+          </article>
+
+          <article class="copy-panel align-right" data-start="0.14" data-end="0.32">
+            <h2>Сетка держит, но не лечит.</h2>
+            <p class="lead">Выровнял по модулю — а смысл всё равно уплыл, как резиновая уточка.</p>
+          </article>
+
+          <article class="copy-panel align-left advantage" data-start="0.29" data-end="0.49">
+            <h2>Шрифт решает всё, кроме зарплаты.</h2>
+            <p class="lead">Тонкий гротеск не убедит заказчика, но хотя бы ты умрёшь эстетично.</p>
+          </article>
+
+          <article class="copy-panel align-right" data-start="0.46" data-end="0.66">
+            <h2>Красный — цвет срочных правок.</h2>
+            <p class="lead">Клиент говорит «сделайте ярче», и ты красишь кнопку в цвет пожарной машины.</p>
+          </article>
+
+          <article class="copy-panel align-left advantage" data-start="0.62" data-end="0.82">
+            <h2>Тени скрывают мелкие косяки.</h2>
+            <p class="lead">Как маскировочная сетка для верстальщика, который забыл про отступы.</p>
+          </article>
+
+          <article class="copy-panel align-right final-panel" data-start="0.78" data-end="1">
+            <h2>Загляните ко мне</h2>
+            <div class="button-row">
+              <a class="button primary" href="https://ajkpro.ru" target="_blank" rel="noopener">
+                Мой сайт
+              </a>
+              <a class="button secondary" href="https://www.behance.net/ajkpro" target="_blank" rel="noopener">
+                Мой behance
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="video-state" id="video-state" role="status" aria-live="polite">Загружаем сцену</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets99/script2.js"></script>
+</body>
+</html>
